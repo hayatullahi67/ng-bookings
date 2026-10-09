@@ -1,0 +1,35 @@
+@import 'tailwindcss';
+
+@theme {
+  --font-sans: 'Instrument Sans', system-ui, 'Segoe UI', Roboto, sans-serif;
+  --font-display: 'Outfit', system-ui, 'Segoe UI', Roboto, sans-serif;
+
+  --color-primary: #5b3df5;
+  --color-primary-soft: #efecfe;
+  --color-primary-line: #b9aafa;
+  --color-page: #f3f3f6;
+  --color-ink: #1c1c28;
+  --color-muted: #6f7280;
+  --color-line: #ececf1;
+  --color-orange: #e8680f;
+  --color-orange-soft: #fdeee3;
+  --color-success: #1fae4b;
+  --color-success-soft: #dcf5e3;
+  --color-danger: #e5484d;
+  --color-danger-soft: #fde8e8;
+  --color-maroon: #8b1538;
+}
+
+body {
+  margin: 0;
+  background: var(--color-page);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Recharts draws a focus outline on click; the design has none. */
+.recharts-wrapper *:focus {
+  outline: none;
+}
